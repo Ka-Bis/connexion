@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+body {
+    background-image: url(./images/bridge.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+.grid-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30vh 1fr;
+}
+
+.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-form {
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding: 2em 0;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.281)
+}
+
+
+.login-img{
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.username {
+    padding-bottom: 2em;
+}
+.input{
+    border: none;
+    padding: 10px;
+    width: 50%;
+    /* display: flex;
+    justify-content: center; */
+    display: block;
+    margin: 0 auto;
+}
+
+.label {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    padding-bottom:0.3em;
+}
+.connect {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.cnx-btn {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 0.5em 4em;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.cnx-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
