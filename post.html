@@ -5,18 +5,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLE -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="./public/post.css">
+
+    <!-- SCRIPT -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
     <title>Post</title>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="nav-item">Connexion</div>
-        <div class="nav-item">Deconnexion</div>
-        <div class="nav-item"></div>
-    </nav>
-    <section class="article">
 
-    </section>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                LOGO
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Accueil
+                </a>
+                <a class="navbar-item">
+                    Message
+                </a>
+                <div class="field has-addons navbar-item">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Recherche...">
+                    </div>
+                    <div class="control">
+                        <a class="button is-dark">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable" style="margin-right:3em;">
+                    <a class="navbar-link">
+                        Parametre
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Reglage
+                        </a>
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">Contact</a>
+                        <hr class="navbar-divider">
+                        <a href="./index.html" class="navbar-item">
+                            Se deconnecter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="grid-body">
+        <div class="header-img">
+        </div>
+        <div class="card">
+            <div class="grid-card">
+                <div class="user-img">
+                    <img src="./public/images/brad_turner.jpg" class="brad_turner" alt="brad_turner">
+                </div>
+                <div class="username">
+                    <h2>Brad Turner</h2>
+                </div>
+                <div class="userId">
+                    <a href="#">@brad_turner</a>
+                </div>
+                <div class="user-info">
+                    <p><i class="fas fa-map-marker-alt"></i> La Roche sur Yon, Vendée</p>
+                </div>
+                <div class="job">
+                    <p><i class="fas fa-briefcase"></i> Chômeur</p>
+                </div>
+                <div class="description">
+                    <blockquote>Si l’amour est aveugle j’te crèverai les yeux pour que tu m’aimes encore plus.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-body_post">
+        <!-- <div class="blank"></div> -->
+        <div class="add-post">
+            <!-- <textarea name="add-post" id="" cols="30" rows="10">
+            </textarea>
+                <script>
+                CKEDITOR.replace( 'add-post' );
+                </script> -->
+        </div>
+        <div class="post">
+            <!-- +++++++ VERSION GRID +++++++ -->
+            <!-- <div class="grid-article-post">
+                <img src="./public/images/brad_turner.jpg" alt="" class="img">
+                <div class="user-date">
+                    <p><a href="#">Brad Turner </a> <span>@brad_turner</span> <time>20 min</time></p>
+                </div>
+                <p class="content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam amet ea voluptatem fugit maxime
+                    perferendis quod et corrupti laudantium! Dolorem id a accusantium maiores rerum esse ab sint
+                    excepturi veniam.
+                </p>
+            </div> -->
+            <!-- +++++++ VERSION GRID +++++++ -->
+            <div class="content">
+                <div class="user-post">
+                    <img src="./public/images/brad_turner.jpg" alt="" class="img">
+                    <p><a href="#">Brad Turner </a> <span>@brad_turner</span> | <time>20 min ago</time></p>
+                </div>
+                <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus iste
+                    doloribus dolorum
+                    quibusdam, consequatur quidem cupiditate voluptas commodi dolores laborum? Laboriosam quibusdam
+                    exercitationem nam corrupti distinctio eveniet voluptate ipsa excepturi!. Lorem ipsum dolor sit.
+                </p>
+                <!-- <hr class="hr"> -->
+            </div>
+            <div class="content">
+                <div class="user-post">
+                    <img src="./public/images/brad_turner.jpg" alt="" class="img"">
+                    <p><a href="#">Brad Turner </a> <span>@brad_turner</span> | <time>30 min ago </time></p>
+                </div>
+                <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus iste
+                    doloribus dolorum
+                    quibusdam, consequatur quidem cupiditate voluptas commodi dolores laborum? Laboriosam quibusdam
+                    exercitationem nam corrupti distinctio eveniet voluptate ipsa excepturi!. Lorem ipsum dolor sit.
+                </p>
+                <!-- <hr class="hr"> -->
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./app.js"></script>
 </body>
