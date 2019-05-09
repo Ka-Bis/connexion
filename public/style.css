@@ -11,7 +11,7 @@ body {
 .grid-body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30vh 1fr;
+    grid-template-rows: 20vh 1fr 20vh;
 }
 
 .title {
